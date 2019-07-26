@@ -1,6 +1,9 @@
+''' Module used to work with .json roster files. '''
+
 import json
 
 def add_roster():
+    ''' Enter student names to create a period's roster. '''
     period_name = input('Which period? ')
     roster = []
     print('Type exit to quit.')
@@ -16,6 +19,7 @@ def add_roster():
     print(f'Congratulations, you added roster {period_name}.')
 
 def load_roster():
+    ''' Load and return a period's roster. '''
     period_name = input('Which period? ')
     filename = f'{period_name}.json'
     with open(filename) as f:
