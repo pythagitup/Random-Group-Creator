@@ -30,6 +30,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Fifth.json" />
+    <Content Include="Fourth.json" />
     <Content Include="Second.json" />
     <Content Include="Third.json" />
   </ItemGroup>

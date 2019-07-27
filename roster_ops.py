@@ -25,3 +25,17 @@ def load_roster():
     with open(filename) as f:
         roster = json.load(f)
     return roster
+
+def edit_roster():
+    ''' Edit a pre-existing roster. '''
+    period_name = input('Which period? ')
+    filename = f'{period_name}.json'
+    with open(filename) as f:
+        roster = json.load(f)
+    print(roster)
+    change_from = input('Which name would you like to change? ' )
+    change_to = input(f'What would you like to change {change_from} to? ')
+    roster[roster.index(change_from)] = change_to
+    with open(filename, 'w') as g:
+        json.dump(roster,g)
+    print(f'Congratulations, you changed {change_from} to {change_to}.')
