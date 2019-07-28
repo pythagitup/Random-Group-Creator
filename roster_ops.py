@@ -13,15 +13,15 @@ def add_roster():
             break
         roster.append(name)
     
-    filename = f'{period_name}.json'
+    filename = f'{period_name.title()}.json'
     with open(filename, 'w') as f:
         json.dump(roster,f)
-    print(f'Congratulations, you added roster {period_name}.')
+    print(f'Congratulations, you added roster {period_name.title()}.')
 
 def load_roster():
     ''' Load and return a period's roster. '''
     period_name = input('Which period? ')
-    filename = f'{period_name}.json'
+    filename = f'{period_name.title()}.json'
     with open(filename) as f:
         roster = json.load(f)
     return roster
@@ -29,7 +29,7 @@ def load_roster():
 def edit_roster():
     ''' Edit a pre-existing roster. '''
     period_name = input('Which period? ')
-    filename = f'{period_name}.json'
+    filename = f'{period_name.title()}.json'
     with open(filename) as f:
         roster = json.load(f)
     print(roster)

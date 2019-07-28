@@ -2,6 +2,7 @@
 
 from roster_ops import add_roster, load_roster, edit_roster
 from randomize_groups import rand_roster, six_groups
+from ClassPeriod import ClassPeriod
 
 print('Hello, this is Random Group Creator!\nType "exit" at any time to quit.')
 
@@ -18,13 +19,13 @@ while True:
         edit_roster()
     elif choice == 'shuffle':
         roster = load_roster()
-        print(roster)
-        roster = rand_roster(roster)
-        print(roster)
+        x = ClassPeriod(roster)
+        x.show_roster()
+        x.randomize()
     elif choice == 'groups':
         roster = load_roster()
-        print(roster)
-        roster = rand_roster(roster)
-        six_groups(roster)
+        x = ClassPeriod(roster)
+        n = input('How many groups? ')
+        x.groups(int(n))
     else:
         print('Sorry, that answer didn\'t make sense to me.')
