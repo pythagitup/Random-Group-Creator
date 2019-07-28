@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ClassPeriod.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="randomize_groups.py">
       <SubType>Code</SubType>
     </Compile>
