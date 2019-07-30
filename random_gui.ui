@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>623</width>
+    <height>643</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Random Group Creator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Class Period:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="select_period_CB">
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
+         <item>
+          <property name="text">
+           <string>2nd</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3rd</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4th</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5th</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="randomize_PB">
+         <property name="font">
+          <font>
+           <pointsize>28</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Randomize!!!</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Group 1</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="group1_L">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>Alice</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bob</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Charles</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Dorothy</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Enrique</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Group 2</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="group2_L">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>Alice</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bob</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Charles</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Dorothy</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Enrique</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Group 3</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="group3_L">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>Alice</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bob</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Charles</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Dorothy</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Enrique</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0" colspan="3">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Group 4</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="group4_L">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>Alice</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bob</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Charles</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Dorothy</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Enrique</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Group 5</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="group5_L">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>Alice</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bob</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Charles</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Dorothy</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Enrique</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Group 6</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="group6_L">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>Alice</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bob</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Charles</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Dorothy</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Enrique</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>623</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,7 +1,6 @@
-''' This will (eventually) be the GUI for the Random Group Creator '''
+''' Random Group Creator application '''
 
 from roster_ops import add_roster, load_roster, edit_roster
-from randomize_groups import rand_roster, six_groups
 from ClassPeriod import ClassPeriod
 
 print('Hello, this is Random Group Creator!\nType "exit" at any time to quit.')

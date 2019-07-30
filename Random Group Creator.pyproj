@@ -24,17 +24,25 @@
     <Compile Include="ClassPeriod.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="randomize_groups.py">
+    <Compile Include="vfxgui.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="random_group_creator_GUI.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Random_Group_Creator.py" />
+    <Compile Include="random_gui.py" />
     <Compile Include="roster_ops.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Fifth.json" />
     <Content Include="Fourth.json" />
+    <Content Include="random_gui.ui" />
     <Content Include="Second.json" />
     <Content Include="Third.json" />
   </ItemGroup>
