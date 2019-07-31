@@ -43,11 +43,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Fifth.json" />
-    <Content Include="Fourth.json" />
+    <Content Include="5th.json" />
+    <Content Include="4th.json" />
     <Content Include="random_gui.ui" />
-    <Content Include="Second.json" />
-    <Content Include="Third.json" />
+    <Content Include="2nd.json" />
+    <Content Include="3rd.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

@@ -1,11 +1,20 @@
 from random import shuffle
-from roster_ops import update_roster
+from roster_ops import update_roster, load_roster
 
 class ClassPeriod:
     ''' Class to hold roster, randomize it, and make groups. '''
 
-    def __init__(self,roster):
-        self.roster = roster
+    def __init__(self):
+        self.roster = []
+        self.period = ''
+
+    def set_period(self,period):
+        ''' Set the period. '''
+        self.period = period
+
+    def set_roster(self):
+        ''' Load roster for this period. '''
+        self.roster = load_roster(self.period)
 
     def show_roster(self):
         ''' Print the roster. '''
@@ -14,7 +23,6 @@ class ClassPeriod:
     def randomize(self):
         ''' Randomize the roster. '''
         shuffle(self.roster)
-        print(self.roster)
 
     def groups(self,number_groups):
         ''' Split class into given number of groups. '''
