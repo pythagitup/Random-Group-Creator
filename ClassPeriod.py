@@ -1,4 +1,5 @@
 from random import shuffle
+from roster_ops import update_roster
 
 class ClassPeriod:
     ''' Class to hold roster, randomize it, and make groups. '''

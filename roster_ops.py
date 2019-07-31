@@ -39,3 +39,6 @@ def edit_roster():
     with open(filename, 'w') as g:
         json.dump(roster,g)
     print(f'Congratulations, you changed {change_from} to {change_to}.')
+
+def update_roster():
+    ''' Re-write roster from given list. '''
