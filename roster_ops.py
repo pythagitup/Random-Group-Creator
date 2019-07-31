@@ -18,9 +18,9 @@ def add_roster():
         json.dump(roster,f)
     print(f'Congratulations, you added roster {period_name.title()}.')
 
-def load_roster():
+def load_roster(period = 'second'):
     ''' Load and return a period's roster. '''
-    period_name = input('Which period? ')
+    period_name = period
     filename = f'{period_name.title()}.json'
     with open(filename) as f:
         roster = json.load(f)

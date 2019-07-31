@@ -24,6 +24,11 @@ class ClassPeriod:
         for j in range(len(self.roster)):
             m = j % x
             y[m].append(self.roster[j])
+        return y
+        
+    def display_groups(self,number_groups):
+        x = number_groups
+        y = self.groups(number_groups)
         for k in range(x):
             print(f'Group {k+1}: ')
             for name in y[k]:

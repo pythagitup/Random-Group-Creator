@@ -24,6 +24,9 @@
     <Compile Include="ClassPeriod.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="populate_list.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="vfxgui.py">
       <SubType>Code</SubType>
     </Compile>

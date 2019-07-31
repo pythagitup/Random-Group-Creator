@@ -22,9 +22,10 @@ while True:
         x.show_roster()
         x.randomize()
     elif choice == 'groups':
-        roster = load_roster()
+        roster = load_roster('second')
         x = ClassPeriod(roster)
         n = input('How many groups? ')
-        x.groups(int(n))
+        x.display_groups(int(n))
+
     else:
         print('Sorry, that answer didn\'t make sense to me.')
