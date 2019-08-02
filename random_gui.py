@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'random_gui.ui',
 # licensing of 'random_gui.ui' applies.
 #
-# Created: Tue Jul 30 00:09:46 2019
+# Created: Thu Aug  1 20:03:02 2019
 #      by: pyside2-uic  running on PySide2 5.13.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -68,6 +68,8 @@ class Ui_MainWindow(object):
         font.setPointSize(20)
         self.group1_L.setFont(font)
         self.group1_L.setObjectName("group1_L")
+        self.group1_L.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
+        self.group1_L.setStyleSheet('background-color: #f4cccc')
         QtWidgets.QListWidgetItem(self.group1_L)
         QtWidgets.QListWidgetItem(self.group1_L)
         QtWidgets.QListWidgetItem(self.group1_L)
@@ -91,6 +93,8 @@ class Ui_MainWindow(object):
         font.setPointSize(20)
         self.group2_L.setFont(font)
         self.group2_L.setObjectName("group2_L")
+        self.group2_L.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
+        self.group2_L.setStyleSheet('background-color: #c9daf8')
         QtWidgets.QListWidgetItem(self.group2_L)
         QtWidgets.QListWidgetItem(self.group2_L)
         QtWidgets.QListWidgetItem(self.group2_L)
@@ -114,6 +118,8 @@ class Ui_MainWindow(object):
         font.setPointSize(20)
         self.group3_L.setFont(font)
         self.group3_L.setObjectName("group3_L")
+        self.group3_L.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
+        self.group3_L.setStyleSheet('background-color: #fce5cd')
         QtWidgets.QListWidgetItem(self.group3_L)
         QtWidgets.QListWidgetItem(self.group3_L)
         QtWidgets.QListWidgetItem(self.group3_L)
@@ -140,6 +146,8 @@ class Ui_MainWindow(object):
         font.setPointSize(20)
         self.group4_L.setFont(font)
         self.group4_L.setObjectName("group4_L")
+        self.group4_L.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
+        self.group4_L.setStyleSheet('background-color: #d9ead3')
         QtWidgets.QListWidgetItem(self.group4_L)
         QtWidgets.QListWidgetItem(self.group4_L)
         QtWidgets.QListWidgetItem(self.group4_L)
@@ -163,6 +171,8 @@ class Ui_MainWindow(object):
         font.setPointSize(20)
         self.group5_L.setFont(font)
         self.group5_L.setObjectName("group5_L")
+        self.group5_L.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
+        self.group5_L.setStyleSheet('background-color: #fff2cc')
         QtWidgets.QListWidgetItem(self.group5_L)
         QtWidgets.QListWidgetItem(self.group5_L)
         QtWidgets.QListWidgetItem(self.group5_L)
@@ -186,6 +196,8 @@ class Ui_MainWindow(object):
         font.setPointSize(20)
         self.group6_L.setFont(font)
         self.group6_L.setObjectName("group6_L")
+        self.group6_L.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
+        self.group6_L.setStyleSheet('background-color: #d9d2e9')
         QtWidgets.QListWidgetItem(self.group6_L)
         QtWidgets.QListWidgetItem(self.group6_L)
         QtWidgets.QListWidgetItem(self.group6_L)
@@ -203,6 +215,21 @@ class Ui_MainWindow(object):
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
+        self.toolBar = QtWidgets.QToolBar(MainWindow)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.toolBar.setFont(font)
+        self.toolBar.setObjectName("toolBar")
+        MainWindow.addToolBar(QtCore.Qt.TopToolBarArea, self.toolBar)
+        self.actionAdd_Student = QtWidgets.QAction(MainWindow)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.actionAdd_Student.setFont(font)
+        self.actionAdd_Student.setObjectName("actionAdd_Student")
+        self.actionRemove_Student = QtWidgets.QAction(MainWindow)
+        self.actionRemove_Student.setObjectName("actionRemove_Student")
+        self.toolBar.addAction(self.actionAdd_Student)
+        self.toolBar.addAction(self.actionRemove_Student)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -221,3 +248,7 @@ class Ui_MainWindow(object):
         self.label_4.setText(QtWidgets.QApplication.translate("MainWindow", "Group 4", None, -1))
         self.label_5.setText(QtWidgets.QApplication.translate("MainWindow", "Group 5", None, -1))
         self.label_6.setText(QtWidgets.QApplication.translate("MainWindow", "Group 6", None, -1))
+        self.toolBar.setWindowTitle(QtWidgets.QApplication.translate("MainWindow", "toolBar", None, -1))
+        self.actionAdd_Student.setText(QtWidgets.QApplication.translate("MainWindow", "Add Student", None, -1))
+        self.actionRemove_Student.setText(QtWidgets.QApplication.translate("MainWindow", "Remove Student", None, -1))
+

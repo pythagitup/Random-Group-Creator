@@ -1,5 +1,4 @@
 from ClassPeriod import ClassPeriod
-from roster_ops import load_roster
 
 def populate_lists(self,period,rand=False):
     self.group1_L.clear()
