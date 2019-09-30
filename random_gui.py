@@ -49,6 +49,9 @@ class Ui_MainWindow(object):
         font.setBold(True)
         self.randomize_PB.setFont(font)
         self.randomize_PB.setObjectName("randomize_PB")
+        self.randomize_PB.setAutoDefault(True)
+        self.randomize_PB.setAutoRepeat(True)
+        self.randomize_PB.setAutoRepeatInterval(50)
         self.gridLayout_2.addWidget(self.randomize_PB, 0, 2, 1, 1)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
@@ -228,8 +231,11 @@ class Ui_MainWindow(object):
         self.actionAdd_Student.setObjectName("actionAdd_Student")
         self.actionRemove_Student = QtWidgets.QAction(MainWindow)
         self.actionRemove_Student.setObjectName("actionRemove_Student")
+        self.actionEdit_Student = QtWidgets.QAction(MainWindow)
+        self.actionEdit_Student.setObjectName("actionEdit_Student")
         self.toolBar.addAction(self.actionAdd_Student)
         self.toolBar.addAction(self.actionRemove_Student)
+        self.toolBar.addAction(self.actionEdit_Student)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -251,4 +257,4 @@ class Ui_MainWindow(object):
         self.toolBar.setWindowTitle(QtWidgets.QApplication.translate("MainWindow", "toolBar", None, -1))
         self.actionAdd_Student.setText(QtWidgets.QApplication.translate("MainWindow", "Add Student", None, -1))
         self.actionRemove_Student.setText(QtWidgets.QApplication.translate("MainWindow", "Remove Student", None, -1))
-
+        self.actionEdit_Student.setText(QtWidgets.QApplication.translate("MainWindow", "Edit Student", None, -1))

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a823be03-89ec-4741-a22a-83beeb467203</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Random_Group_Creator.py</StartupFile>
+    <StartupFile>Random_Group_Creator_App.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,14 +27,9 @@
     <Compile Include="populate_list.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="random_gui - Preserved.py" />
-    <Compile Include="vfxgui.py">
+    <Compile Include="Random_Group_Creator_App.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="random_group_creator_GUI.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Random_Group_Creator.py" />
     <Compile Include="random_gui.py" />
     <Compile Include="roster_ops.py">
       <SubType>Code</SubType>

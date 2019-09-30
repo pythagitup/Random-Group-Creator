@@ -27,3 +27,14 @@ def remove_name(period,name):
         roster.remove(name)
     with open(filename, 'w') as f:
         json.dump(roster,f)
+
+def edit_name(period,name):
+    ''' Edit name of student in roster. '''
+    filename = f'{period.title()}.json'
+    with open(filename) as f:
+        roster = json.load(f)
+    wrong,right = name.split(' ', 1)
+    if wrong in roster:
+        roster[:] = [right if x == wrong else x for x in roster]
+    with open(filename, 'w') as f:
+        json.dump(roster,f)
